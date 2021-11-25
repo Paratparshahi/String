@@ -1,0 +1,50 @@
+from sys import stdin
+
+
+def isPalindrome(string) :
+    if string[0:]==string[-1::-1]:
+        
+        return True 
+    else:
+        
+        return False 
+    
+    
+    
+    
+   
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+#main
+string = stdin.readline().strip();
+ans = isPalindrome(string)
+
+if ans :
+    print('true')
+else :
+    print('false')
