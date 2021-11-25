@@ -1,0 +1,93 @@
+from sys import stdin
+No_of_char=256
+def isPermutation(str1,str2):
+    len1 = len(str1)
+    len2 = len(str2)
+    if len1 != len2:
+        return False
+    arr = [0] * No_of_char
+    for i in str1:
+        arr[ord(i)]+=1
+    for i in str2:
+        arr[ord(i)]-=1
+    for i in arr:
+        if i != 0:
+            return False
+    return True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+      
+ 
+        
+           
+           
+               
+                
+                    
+                    
+                
+               
+                
+                
+          
+                
+            
+        
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+#main
+string1 = stdin.readline().strip();
+string2 = stdin.readline().strip();
+
+ans = isPermutation(string1, string2)
+
+if ans :
+    print('true')
+else :
+    print('false')
