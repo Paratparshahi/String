@@ -1,0 +1,37 @@
+from sys import stdin
+
+
+def highestOccuringChar(string) :
+    n=len(string)
+    frequency=[0]*256
+    maxfrequency=0
+    for i in range(n):
+        frequency[ord(string[i])]+=1
+        maxfrequency=max(maxfrequency,frequency[ord(string[i])])
+            
+    ans = '\0'
+        
+        
+    for i in range(n):
+        if frequency[ord(string[i])] == maxfrequency:
+                ans = string[i]
+                
+            
+               
+        
+    return ans
+    
+        
+        
+            
+                
+                   
+                
+                
+        
+    
+#main
+string = stdin.readline().strip();
+ans = highestOccuringChar(string)
+
+print(ans)
