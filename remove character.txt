@@ -1,0 +1,48 @@
+from sys import stdin
+
+
+def removeAllOccurrencesOfChar(string, ch) :
+    str=''
+    for ste in string:
+        if ste!=ch:
+            
+            str+=ste 
+    return str         
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+#main
+string = stdin.readline().strip()
+ch = stdin.readline().strip()[0]
+
+ans = removeAllOccurrencesOfChar(string, ch)
+
+print(ans)
