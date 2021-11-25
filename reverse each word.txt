@@ -1,0 +1,54 @@
+
+from sys import stdin
+
+
+def reverseEachWord(string) :
+    text =string.split()
+    sop=''
+    for word in text:
+        rut=word[-1::-1]
+        sop+=rut+' '
+    return sop
+
+        
+       
+        
+        
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+#main
+string = stdin.readline().strip()
+
+ans = reverseEachWord(string)
+
+print(ans)
